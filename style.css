@@ -1,0 +1,167 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PAMATA STILS */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #222;
+  scroll-behavior: smooth; /* gluda ritināšana */
+}
+
+/* IZVĒLNE */
+.top-nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+  border-bottom: 1px solid #eee;
+}
+
+.top-nav nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO – NEKAS NETIEK GRIEZTS */
+.hero {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero img {
+  width: 400px;
+  height: 400px;
+  max-width: 90vw;
+  max-height: 90vw;
+  object-fit: contain;
+  display: block;
+}
+
+/* ATBALSTĪTĀJI */
+.supporters {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.supporters h2 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* SPONSORU GRID */
+.sponsors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 80px);
+  gap: 1rem;
+}
+
+/* SPONSORA BLOKS — 80x80 + ORANŽA STRĪPA */
+.sponsor {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #e67e22; /* oranža apmale */
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* KLIKŠĶINĀMA VISA ZONA */
+.sponsor a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LOGO */
+.sponsor img {
+  max-width: 70px;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+/* ATBALSTI SADAĻA */
+.donate {
+  max-width: 600px;
+  margin: 0 auto 4rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.donate h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.donate p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.donate-button {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border: 1px solid #e67e22;
+  color: #e67e22;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.donate-button:hover {
+  background: #e67e22;
+  color: #fff;
+}
+
+/* MOBILAIS SKATS */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 45vh;
+  }
+
+  .top-nav nav {
+    gap: 1.2rem;
+  }
+
+  .sponsors {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    justify-content: center;
+  }
+
+  .sponsor {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sponsor img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
