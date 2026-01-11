@@ -10,7 +10,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: #ffffff;
   color: #222;
-  scroll-behavior: smooth; /* gluda ritināšana */
+  scroll-behavior: smooth;
 }
 
 /* IZVĒLNE */
@@ -39,7 +39,7 @@ body {
   text-decoration: underline;
 }
 
-/* HERO – NEKAS NETIEK GRIEZTS */
+/* HERO */
 .hero {
   width: 100%;
   min-height: 60vh;
@@ -57,19 +57,67 @@ body {
   display: block;
 }
 
-/* ABOUT lapa */
+/* ABOUT LAPA */
 .about {
   display: flex;
   justify-content: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 .about-content {
-  max-width: 720px;      /* līdzīgi kā hero / saturs */
-  text-align: center;   /* IEcentrē tekstu */
-  line-height: 1.6;
+  max-width: 720px;
+  text-align: center;
+  line-height: 1.7;
 }
 
+/* VIRSRKATI */
+.about-content h1 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.about-content h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.about-content h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+/* TEKSTS */
+.about-content p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* SARAKSTI */
+.about-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-content li {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+/* HR – SMALKA ATDALĪŠANA */
+.about-content hr {
+  width: 60px;
+  margin: 40px auto;
+  border: none;
+  border-top: 1px solid #ddd;
+}
 
 /* ATBALSTĪTĀJI */
 .supporters {
@@ -94,18 +142,17 @@ body {
   gap: 1rem;
 }
 
-/* SPONSORA BLOKS — 80x80 + ORANŽA STRĪPA */
+/* SPONSORS */
 .sponsor {
   width: 80px;
   height: 80px;
-  border: 1px solid #e67e22; /* oranža apmale */
+  border: 1px solid #e67e22;
   background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* KLIKŠĶINĀMA VISA ZONA */
 .sponsor a {
   width: 100%;
   height: 100%;
@@ -114,14 +161,13 @@ body {
   justify-content: center;
 }
 
-/* LOGO */
 .sponsor img {
   max-width: 70px;
   max-height: 70px;
   object-fit: contain;
 }
 
-/* ATBALSTI SADAĻA */
+/* ATBALSTI */
 .donate {
   max-width: 600px;
   margin: 0 auto 4rem;
@@ -154,7 +200,7 @@ body {
   color: #fff;
 }
 
-/* MOBILAIS SKATS */
+/* MOBILAIS */
 @media (max-width: 600px) {
   .hero {
     min-height: 45vh;
@@ -162,6 +208,14 @@ body {
 
   .top-nav nav {
     gap: 1.2rem;
+  }
+
+  .about {
+    padding: 60px 16px;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
   }
 
   .sponsors {
@@ -179,4 +233,3 @@ body {
     max-height: 50px;
   }
 }
-
