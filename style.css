@@ -200,6 +200,22 @@ body {
   color: #fff;
 }
 
+.donor-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.donor-list li {
+  font-size: 1.05rem;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 /* MOBILAIS */
 @media (max-width: 600px) {
   .hero {
@@ -233,3 +249,4 @@ body {
     max-height: 50px;
   }
 }
+
